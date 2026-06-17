@@ -14,121 +14,208 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
     <style>
-        /* =========================
-           Reset
-        ========================= */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        /* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* =========================
-           Body
-        ========================= */
-        body {
-            min-height: 100vh;
-            background: #121212;
-            color: white;
-            font-family: Tahoma, Arial, sans-serif;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+/* ===== Body ===== */
+body {
 
-            padding: 20px;
-        }
+    min-height: 100vh;
 
-        /* =========================
-           Form Container
-        ========================= */
-        .form-container {
-            width: 100%;
-            max-width: 550px;
+    background: #121212;
 
-            background: #1b1b1b;
-            border: 1px solid #333;
-            border-radius: 15px;
+    color: white;
 
-            padding: 30px;
-        }
+    font-family: Tahoma, Arial, sans-serif;
 
-        h2 {
-            text-align: center;
-            margin-bottom: 25px;
+    display: flex;
 
-            font-size: clamp(1.5rem, 4vw, 2rem);
-        }
+    justify-content: center;
 
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+    align-items: flex-start;
 
-        input,
-        textarea {
-            width: 100%;
+    padding: 30px 15px;
 
-            padding: 14px;
+}
 
-            background: #222;
-            color: white;
 
-            border: 1px solid #444;
-            border-radius: 8px;
+/* ===== Form Container ===== */
+.form-container {
 
-            font-size: 1rem;
-        }
+    width: 100%;
 
-        input:focus,
-        textarea:focus {
-            outline: none;
-            border-color: gold;
-            box-shadow: 0 0 10px rgba(255, 215, 0, .4);
-        }
+    max-width: 550px;
 
-        textarea {
-            resize: vertical;
-            min-height: 140px;
-        }
+    background: #1b1b1b;
 
-        button {
-            padding: 14px;
+    border: 1px solid #333;
 
-            background: #222;
-            color: white;
+    border-radius: 15px;
 
-            border: 2px solid #444;
-            border-radius: 8px;
+    padding: 30px;
 
-            font-size: 1rem;
-            cursor: pointer;
+}
 
-            transition: .3s;
-        }
 
-        button:hover {
-            background: gold;
-            color: black;
-            border-color: gold;
-            box-shadow: 0 0 15px gold;
-        }
+/* ===== Title ===== */
+h2 {
 
-        /* =========================
-           Mobile
-        ========================= */
-        @media (max-width: 480px) {
-            .form-container {
-                padding: 20px;
-            }
+    text-align: center;
 
-            input,
-            textarea,
-            button {
-                font-size: .95rem;
-            }
-        }
+    margin-bottom: 25px;
+
+    font-size: clamp(22px, 5vw, 32px);
+
+}
+
+
+/* ===== Form ===== */
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+/* ===== Inputs ===== */
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #222;
+
+    color: white;
+
+    border: 1px solid #444;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+}
+
+
+input::placeholder,
+textarea::placeholder {
+
+    color: #aaa;
+
+}
+
+
+input:focus,
+textarea:focus {
+
+    outline: none;
+
+    border-color: gold;
+
+    box-shadow: 0 0 10px rgba(255,215,0,.4);
+
+}
+
+
+/* ===== Textarea ===== */
+textarea {
+
+    min-height: 140px;
+
+    resize: vertical;
+
+}
+
+
+/* ===== Button ===== */
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #222;
+
+    color: white;
+
+    border: 2px solid #444;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+button:hover {
+
+    background: gold;
+
+    color: black;
+
+    border-color: gold;
+
+    box-shadow: 0 0 15px gold;
+
+}
+
+
+/* ===== Tablet ===== */
+@media(max-width:768px){
+
+    .form-container{
+
+        padding:25px;
+
+    }
+
+}
+
+
+/* ===== Mobile ===== */
+@media(max-width:480px){
+
+    body{
+
+        padding:20px 12px;
+
+    }
+
+
+    .form-container{
+
+        padding:20px;
+
+        border-radius:12px;
+
+    }
+
+
+    input,
+    textarea,
+    button{
+
+        font-size:15px;
+
+        padding:12px;
+
+    }
+
+}
     </style>
 </head>
 
