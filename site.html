@@ -13,138 +13,185 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
     <style>
-        /* =========================
-           Reset
-        ========================= */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        /* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* =========================
-           Body
-        ========================= */
-        body {
-            min-height: 100vh;
-            background: #121212;
-            color: white;
-            font-family: Tahoma, Arial, sans-serif;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+/* ===== Body ===== */
+body {
+    min-height: 100vh;
 
-            padding: 20px;
-        }
+    background: #121212;
+    color: white;
 
-        /* =========================
-           Main Container
-        ========================= */
-        .container {
-            width: 100%;
-            max-width: 900px;
+    font-family: Tahoma, Arial, sans-serif;
 
-            text-align: center;
+    display: flex;
+    justify-content: center;
 
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
+    /* مهم للموبايل */
+    align-items: flex-start;
 
-        /* =========================
-           Title
-        ========================= */
-        h1 {
-            font-size: clamp(2rem, 5vw, 3.2rem);
-            line-height: 1.3;
-        }
+    padding: 30px 20px;
+}
 
-        /* =========================
-           Description
-        ========================= */
-        p {
-            max-width: 700px;
-            margin: auto;
 
-            color: #d1d1d1;
+/* ===== Container ===== */
+.container {
 
-            line-height: 1.9;
-            font-size: clamp(1rem, 2vw, 1.2rem);
-        }
+    width: 100%;
+    max-width: 900px;
 
-        /* =========================
-           Features
-        ========================= */
-        ul {
-            list-style: none;
+    text-align: center;
 
-            max-width: 650px;
-            margin: auto;
+    display: flex;
+    flex-direction: column;
 
-            text-align: right;
-        }
+    gap: 25px;
+}
 
-        ul li {
-            background: #1d1d1d;
 
-            margin-bottom: 12px;
-            padding: 15px;
+/* ===== Title ===== */
+h1 {
 
-            border-right: 4px solid gold;
-            border-radius: 8px;
+    font-size: clamp(1.8rem, 6vw, 3rem);
 
-            line-height: 1.8;
-        }
+    line-height: 1.4;
 
-        /* =========================
-           Button
-        ========================= */
-        .button {
-            align-self: center;
+}
 
-            text-decoration: none;
 
-            background: #222;
-            color: white;
+/* ===== Description ===== */
+p {
 
-            border: 2px solid #444;
-            border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
 
-            padding: 15px 35px;
+    margin: auto;
 
-            font-size: clamp(.95rem, 2vw, 1.1rem);
+    color: #ddd;
 
-            transition: .3s ease;
-        }
+    font-size: clamp(1rem, 3vw, 1.2rem);
 
-        .button:hover {
-            background: gold;
-            color: black;
-            border-color: gold;
-            box-shadow: 0 0 15px gold;
-        }
+    line-height: 1.9;
 
-        /* =========================
-           Mobile
-        ========================= */
-        @media (max-width: 600px) {
+}
 
-            body {
-                padding: 15px;
-            }
 
-            ul li {
-                padding: 12px;
-                font-size: .95rem;
-            }
+/* ===== List ===== */
+ul {
 
-            .button {
-                width: 100%;
-                max-width: 320px;
-                text-align: center;
-            }
-        }
+    width: 100%;
+    max-width: 650px;
+
+    margin: auto;
+
+    list-style: none;
+
+    text-align: right;
+
+}
+
+
+ul li {
+
+    background: #1d1d1d;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 10px;
+
+    border-right: 4px solid gold;
+
+    line-height: 1.8;
+
+}
+
+
+/* ===== Button ===== */
+.button {
+
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+
+    padding: 15px 35px;
+
+    background: #222;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 2px solid #444;
+
+    border-radius: 10px;
+
+    transition: .3s;
+
+}
+
+
+.button:hover {
+
+    background: gold;
+
+    color: black;
+
+    border-color: gold;
+
+    box-shadow: 0 0 15px gold;
+
+}
+
+
+
+/* ===== Mobile ===== */
+@media (max-width:600px) {
+
+
+    body {
+
+        padding: 20px 15px;
+
+    }
+
+
+    .container {
+
+        gap: 20px;
+
+    }
+
+
+    ul li {
+
+        padding: 12px;
+
+        font-size: 14px;
+
+    }
+
+
+    .button {
+
+        width: 100%;
+
+        max-width: 320px;
+
+        text-align: center;
+
+    }
+
+}
     </style>
 </head>
 
