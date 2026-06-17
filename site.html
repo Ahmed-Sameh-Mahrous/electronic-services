@@ -1,88 +1,185 @@
+```html id="2c7nma"
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
-    <title>خدمة صناعة الويب سايت</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمة تصميم وبرمجة مواقع ويب</title>
+
     <meta name="author" content="Ahmed Sameh">
-    <meta name="description" content="نحن نقدم خدمات الكترونية">
+    <meta name="description" content="نحن نقدم خدمات تصميم وبرمجة المواقع الإلكترونية">
+
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
     <style>
+        /* =========================
+           Reset
+        ========================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* =========================
+           Body
+        ========================= */
         body {
+            min-height: 100vh;
             background: #121212;
             color: white;
-            margin: 0;
             font-family: Tahoma, Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        /* =========================
+           Main Container
+        ========================= */
+        .container {
+            width: 100%;
+            max-width: 900px;
+
+            text-align: center;
+
             display: flex;
             flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
+            gap: 25px;
         }
 
-        header {
-            margin-top: 60px;
-            text-align: center;
-        }
-
+        /* =========================
+           Title
+        ========================= */
         h1 {
-            font-size: 2.4rem;
-            margin-bottom: 10px;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            line-height: 1.3;
         }
 
+        /* =========================
+           Description
+        ========================= */
         p {
-            max-width: 600px;
-            line-height: 1.8;
-            font-size: 1.1rem;
+            max-width: 700px;
+            margin: auto;
+
+            color: #d1d1d1;
+
+            line-height: 1.9;
+            font-size: clamp(1rem, 2vw, 1.2rem);
         }
 
+        /* =========================
+           Features
+        ========================= */
         ul {
+            list-style: none;
+
+            max-width: 650px;
+            margin: auto;
+
             text-align: right;
-            max-width: 480px;
-            margin: 20px auto 0;
         }
 
         ul li {
-            margin: 8px 0;
-        }
+            background: #1d1d1d;
 
-        a.button {
-            margin-top: 40px;
-            padding: 15px 35px;
-            background: #222;
-            border: 2px solid #444;
-            color: #fff;
-            text-decoration: none;
+            margin-bottom: 12px;
+            padding: 15px;
+
+            border-right: 4px solid gold;
             border-radius: 8px;
-            transition: .3s;
-            font-size: 1.1rem;
+
+            line-height: 1.8;
         }
 
-        a.button:hover {
+        /* =========================
+           Button
+        ========================= */
+        .button {
+            align-self: center;
+
+            text-decoration: none;
+
+            background: #222;
+            color: white;
+
+            border: 2px solid #444;
+            border-radius: 10px;
+
+            padding: 15px 35px;
+
+            font-size: clamp(.95rem, 2vw, 1.1rem);
+
+            transition: .3s ease;
+        }
+
+        .button:hover {
             background: gold;
-            color: #000;
+            color: black;
             border-color: gold;
             box-shadow: 0 0 15px gold;
+        }
+
+        /* =========================
+           Mobile
+        ========================= */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px;
+            }
+
+            ul li {
+                padding: 12px;
+                font-size: .95rem;
+            }
+
+            .button {
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
+            }
         }
     </style>
 </head>
 
 <body>
-    <header>
+
+    <main class="container">
+
         <h1>خدمة تصميم وبرمجة مواقع ويب</h1>
+
         <p>
-            نساعدك في إنشاء موقع أنيق وسريع الاستجابة مناسب لجميع الأجهزة، باستخدام أحدث التقنيات
+            نساعدك في إنشاء موقع إلكتروني احترافي وسريع ومتجاوب مع جميع الأجهزة،
+            باستخدام أحدث تقنيات تطوير الويب لتقديم تجربة استخدام مميزة لعملائك.
         </p>
 
         <ul>
-            <li>تصميم واجهات عصرية ومتجاوبة (Responsive).</li>
-            <li>ربط المجال (Domain) والاستضافة (Hosting).</li>
-            <li>تهيئة لمحركات البحث (SEO الأساسي).</li>
+            <li>تصميم واجهات عصرية ومتجاوبة مع الهواتف والأجهزة المختلفة.</li>
+
+            <li>برمجة صفحات سريعة ومنظمة باستخدام HTML و CSS و JavaScript.</li>
+
+            <li>ربط الدومين والاستضافة وتجهيز الموقع للنشر.</li>
+
+            <li>تهيئة أساسية لمحركات البحث (SEO).</li>
+
             <li>دعم فني وتعديلات بعد التسليم.</li>
         </ul>
-        <br>
-        <a href="order-site.html" class="button" title="املأ الاستمارة">ابدأ مشروعك الآن</a>
-    </header>
+
+        <a href="order-site.html"
+           class="button"
+           title="املأ الاستمارة">
+            ابدأ مشروعك الآن
+        </a>
+
+    </main>
+
 </body>
 
 </html>
+```
